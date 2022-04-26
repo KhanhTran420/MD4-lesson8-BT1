@@ -83,7 +83,7 @@ public class User implements Validator {
 
 
         if (firstName.length()>45||firstName.length()<1){
-            errors.rejectValue("firstName","firstname.length");
+            errors.rejectValue("firstName","firstName.length");
         }
         if (lastName.length()>45||lastName.length()<1){
             errors.rejectValue("lastName","lastName.length");

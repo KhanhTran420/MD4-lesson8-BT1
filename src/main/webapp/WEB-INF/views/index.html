@@ -11,7 +11,7 @@
         <tr>
             <td>First Name</td>
             <td><input type="text" th:field="*{firstName}"/></td>
-            <td th:if="${#fields.hasErrors('firstName')}" th:error="*{firstName}">First name Error</td>
+            <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name Error</td>
         </tr>
         <tr>
             <td>Last name:</td>
@@ -21,16 +21,16 @@
         <tr>
             <td>Phone Number</td>
             <td><input type="text" th:field="*{number}"/></td>
-            <td th:if="${#fields.hasErrors('number')}" th:error="*{number}">Number Error</td>
+            <td th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Number Error</td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="text" th:field="*{email}"></td>
+            <td><input type="text" th:field="*{email}"/></td>
             <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
         </tr>
         <tr>
             <td>Age:</td>
-            <td><input type="text" th:field="*{age}"></td>
+            <td><input type="text" th:field="*{age}"/></td>
             <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
         </tr>
     </table>
